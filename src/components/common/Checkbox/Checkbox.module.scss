@@ -1,0 +1,31 @@
+@import 'src/styles/variables';
+@import 'src/styles/animations';
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid $gray-light;
+  margin-right: 10px;
+
+  &Active {
+    background-color: $main-color;
+    border: 1px solid $main-color;
+    box-shadow: 0 0 0 3px inset white;
+  }
+
+  &:disabled {
+    animation: rotate360 0.8s linear infinite;
+  }
+}
+
+.label {
+  font-size: 14px;
+  line-height: 18px;
+  user-select: none;
+  cursor: pointer;
+}

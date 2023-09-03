@@ -1,0 +1,52 @@
+@import 'src/styles/variables';
+
+.container {
+  width: 100%;
+  margin-top: 6px;
+
+  &Single {
+    margin-top: 0;
+
+    .info {
+      display: none;
+    }
+  }
+}
+
+.info {
+  min-height: 20px;
+  margin-bottom: 2px;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.label {
+  display: block;
+  letter-spacing: 0.6px;
+  margin-top: 14px;
+  user-select: none;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  background-color: white;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  padding: 8px 12px;
+  resize: none;
+
+  &Invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 0 1px red;
+  }
+
+  &:focus:not(&Invalid) {
+    border: 1px solid $main-color;
+    box-shadow: 0 0 0 1px $main-color;
+  }
+}

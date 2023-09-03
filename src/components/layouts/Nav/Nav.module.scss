@@ -1,0 +1,16 @@
+@import 'src/styles/variables';
+
+.authLink {
+  width: 100px;
+  text-align: center;
+  color: $main-color;
+  font-weight: bold;
+  border: 2px solid $main-color;
+  border-radius: 5px;
+  padding: 6px;
+  user-select: none;
+}
+
+.link {
+  font-weight: bold;
+}

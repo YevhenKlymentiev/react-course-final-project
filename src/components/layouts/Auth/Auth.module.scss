@@ -1,0 +1,10 @@
+@import 'src/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-image: linear-gradient(65deg, white 0%, white 65%, $main-color-light 65%, $secondary-color-light 100%);
+  padding: 60px 40px;
+}

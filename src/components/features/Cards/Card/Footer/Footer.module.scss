@@ -1,0 +1,15 @@
+@import 'src/styles/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.author {
+  color: $secondary-color;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}

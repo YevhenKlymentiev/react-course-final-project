@@ -1,0 +1,28 @@
+@import 'src/styles/animations';
+@import 'src/styles/variables';
+
+.icon {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+
+  circle {
+    transform-origin: center;
+    stroke: $secondary-color;
+
+    &:first-child {
+      animation: rotate360 1.4s ease-in-out infinite;
+    }
+
+    &:last-child {
+      animation: rotate360 1.4s ease-in-out infinite reverse;
+    }
+  }
+
+  &Light {
+    circle {
+      stroke: white;
+    }
+  }
+}

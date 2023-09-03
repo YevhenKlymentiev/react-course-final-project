@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 400px;
+}
+
+.error {
+  position: absolute;
+  bottom: 62px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.createBtn {
+  width: 100%;
+}

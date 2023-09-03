@@ -1,0 +1,19 @@
+@import 'src/styles/variables';
+
+.container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+  background-color: white;
+  padding: 10px 20px;
+
+  &Active {
+    color: white;
+    background-color: $secondary-color;
+  }
+}
